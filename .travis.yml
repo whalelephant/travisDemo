@@ -1,6 +1,6 @@
 language: node_js
 os: osx
-before_install: yarn global add neon-cli
-install: yarn install
+before_install: brew install yarn
+install: yarn global add neon-cli && yarn install
 before_script: neon build --release
 script: node -e lib/index.js
