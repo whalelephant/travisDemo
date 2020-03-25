@@ -6,4 +6,4 @@ install:
     - npm install --global neon-cli
     - npm install --global node-gyp
     - npm install
-script: node -e lib/index.js
+script: node lib/index.js
