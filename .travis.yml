@@ -1,8 +1,10 @@
-language: node_js
+language: rust
+rust:
+    - nightly
 node_js: 10
 os: osx
 before_install: 
-    - curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+    - brew install node
     - brew install yarn
 install: yarn global add neon-cli && yarn install
 before_script: neon build --release
