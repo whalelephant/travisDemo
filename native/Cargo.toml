@@ -1,0 +1,17 @@
+[package]
+name = "travis"
+version = "0.1.0"
+authors = ["bwty <whalelephant@users.noreply.github.com>"]
+license = "MIT"
+build = "build.rs"
+exclude = ["artifacts.json", "index.node"]
+
+[lib]
+name = "travis"
+crate-type = ["dylib"]
+
+[build-dependencies]
+neon-build = "0.2.0"
+
+[dependencies]
+neon = "0.2.0"
