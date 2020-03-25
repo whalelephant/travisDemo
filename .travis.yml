@@ -4,7 +4,6 @@ rust:
 node_js: 10
 os: osx
 before_install: 
-    - brew install node
     - brew install yarn
 install: yarn global add neon-cli && yarn install
 before_script: neon build --release
